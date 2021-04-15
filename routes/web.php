@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+
 Route::get('/home', [\App\Http\Controllers\PagesController::class, 'index'])->name('home');
 Route::get('/','App\Http\Controllers\PagesController@index');
 Route::get('/products','App\Http\Controllers\PostController@index')->name('products');
